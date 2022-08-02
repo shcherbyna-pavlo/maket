@@ -1,0 +1,25 @@
+.cards_line {
+   margin: 0 -15px;
+}
+.card {
+   display: inline-block;
+   width: calc(100% / 2);
+   margin-right: -4px;
+   padding: 0 15px;
+
+   &_text {
+      background: #1085A9;
+
+      .ico {
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         background: #fff;
+         text-align: center;
+
+         span {
+            font-size: 40px;
+         }
+      }
+   }
+}

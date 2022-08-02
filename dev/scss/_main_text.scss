@@ -1,0 +1,20 @@
+.main_text {
+   padding: 40px 0 20px;
+   @include fonts(18px,22px);
+   color: #414042;
+   
+   h2 {
+      font-weight: 700;
+      @include fonts(30px,37px);
+      color: #14475F;
+   }
+   
+   .one {
+      padding-top: 10px;
+   }
+
+   .two {
+      @include fonts(18px,150%);
+      padding: 40px 0 20px;
+   }
+}
