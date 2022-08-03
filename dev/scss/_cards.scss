@@ -1,3 +1,6 @@
+.cards {
+   padding-bottom: 30px;
+}
 .cards_line {
    margin: 0 -15px;
 }
@@ -5,21 +8,28 @@
    display: inline-block;
    width: calc(100% / 2);
    margin-right: -4px;
-   padding: 0 15px;
+   padding: 15px 15px;
+   @include fonts(16px,150%);
+   color: #fff;
 
    &_text {
       background: #1085A9;
+      padding: 30px;
 
       .ico {
          width: 60px;
-         height: 60px;
+         padding: 15px 0;
          border-radius: 50%;
          background: #fff;
          text-align: center;
 
          span {
-            font-size: 40px;
+            font-size: 30px;
          }
+      }
+
+      h3 {
+         padding: 20px 0 56px;
       }
    }
 }
