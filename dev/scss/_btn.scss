@@ -1,0 +1,27 @@
+.btn {
+   color: #fff;
+   font-weight: 600;
+   @include fonts(16px,20px);
+   
+   a {
+      display: inline-block;
+      padding-left: 8px;
+
+      span {
+         @include fonts(16px,18px);
+      }
+   }
+
+   &:hover a {
+      transform: scale(1.5);
+   }
+}
+.contacts>li a {
+   transition: all .8s;
+   
+   &:hover {
+      color: #000061;
+      text-decoration: underline;
+      text-shadow: 0 0 1px #000000;
+   }
+}

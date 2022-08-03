@@ -1,0 +1,49 @@
+.f_data {
+      width: 100%;
+      background: #87C5E0;
+      @include fonts(14px,150%);
+      color: #231F20;
+      padding: 30px 0 22px;
+   
+   .contact {
+      margin: 0 -15px;
+
+      &_list {
+         display: inline-block;
+         width: calc(100% / 2);
+         margin-right: -4px;
+         padding: 0 15px;
+
+         h4 {
+            font-weight: 700;
+            @include fonts(16px,150%);
+            text-transform: uppercase;
+            padding-bottom: 16px;
+         }
+
+         a {
+            color: #231F20;
+         }
+
+         li {
+            padding-bottom: 8px;
+         }
+      }
+   }
+}
+.f_lain {
+   color: #fff;
+   text-align: center;
+   @include fonts(13px,150%);
+   
+   &_one {
+      width: 100%;
+      background: #14475F;
+      padding: 10px 0;
+   }
+
+   &_two {
+      color: #14475F;
+      padding: 10px 0;
+   }
+}

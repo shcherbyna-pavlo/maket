@@ -15,6 +15,6 @@
 
    .two {
       @include fonts(18px,150%);
-      padding: 40px 0 20px;
+      padding-top: 40px;
    }
 }
