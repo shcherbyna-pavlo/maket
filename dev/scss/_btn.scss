@@ -5,7 +5,7 @@
    // font-weight: 600;
    // @include fonts(16px,20px);
    padding: 0 4px;
-   transition: transform .8s;
+   transition: all .8s;
 
    // a {
    //    display: inline-block;
@@ -44,9 +44,15 @@
 //    }
 
    &:hover {
-      transform: scale(1.2);
-      border-radius: 10px;
-      box-shadow: 1px 1px 2px #fff;
+      color: green;
+      transform: scale(1.4);
+      // border-radius: 10px;
+      // box-shadow: 2px 2px 3px #fff;
+   }
+
+   &:hover span {
+      border-radius: 50%;
+      background-color: rgb(3, 90, 13);
    }
 
    // &:hover a {
