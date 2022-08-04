@@ -3,7 +3,13 @@
    position: relative;
    font-family: 'Bebas Neue';
    @include fonts(61px,61px);
+   // font-weight: 400;
    color: #ffffff;
+   
+   // h2 {
+   //    @include fonts(61px,61px);
+   //    font-weight: 700;
+   // }
 
    [alt="bord"] {
       position: absolute;
@@ -22,7 +28,7 @@
    }
 
    &_text {
-      padding: 163px 0 7px 0;
+      padding: 160px 0 10px 0;
    }
 
    &_line {
@@ -30,18 +36,9 @@
       background: #14475F;
       color: #ffffff;
       text-align: center;
+      // font-family: 'Montserrat';
       font-weight: 700;
       @include fonts(22px,27px);
       padding: 16px 0 17px 0;
    }
 }
-
-// .bord_line {
-//    width: 100%;
-//    background: #14475F;
-//    color: #ffffff;
-//    text-align: center;
-//    font-weight: bold;
-//    @include fonts(22px,27px);
-//    padding: 16px 0 17px 0;
-// }

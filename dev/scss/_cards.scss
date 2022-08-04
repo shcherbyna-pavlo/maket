@@ -10,16 +10,20 @@
    margin-right: -4px;
    padding: 15px 15px;
    color: #fff;
+   transition: transform .8s;
 
+   &:hover {
+      transform: scale(1.1);
+   }
    &_text {
       position: relative;
       background: #1085A9;
-      padding: 30px 30px 32px;
-      @include fonts(13px,16px);
+      padding: 31px 30px 32px;
+      @include fonts(16px,20px);
 
       .ico {
          width: 60px;
-         padding: 15px 0;
+         padding: 13px 0;
          border-radius: 50%;
          background: #fff;
          text-align: center;
@@ -39,7 +43,7 @@
       }
 
       h3 {
-         padding: 20px 0 56px;
+         padding: 22px 0 56px;
          font-weight: 500;
          @include fonts(16px,150%);
       }
@@ -49,6 +53,7 @@
       }
 
       p {
+         @include fonts(13px,16px);
          opacity: 0.5;
          padding-bottom: 22px;
       }
