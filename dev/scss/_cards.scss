@@ -1,8 +1,9 @@
 .cards {
-   padding-bottom: 14px;
+   padding-bottom: 16px;
 }
 .cards_line {
    margin: 0 -15px;
+   counter-reset: item;
 }
 .card {
    display: inline-block;
@@ -11,50 +12,40 @@
    padding: 15px 15px;
    color: #fff;
    transition: transform .8s;
-
-   &:hover {
-      transform: scale(1.1);
+   position: relative;
+   counter-increment: item;
+   
+   &:before {
+      content: counter(item);
+      position: absolute;
+      top: 134px;
+      right: 27px;
+      font-family: 'Bebas Neue';
+      @include fonts(162px,162px);
+      font-weight: 400;     
+      color: #2891B2;
    }
+
+   
    &_text {
-      position: relative;
       background: #1085A9;
-      padding: 30px 30px 32px;
+      padding: 30px 30px 30px;
       @include fonts(16px,20px);
+      font-weight: 600;
+      
+      &:hover {
+         box-shadow: 5px 5px 5px #87C5E0;
+      }
 
       .ico {
          display: block;
          width: 60px;
          height: 60px;
-         // padding: 13px 0;
          border-radius: 50%;
          background: #fff;
          text-align: center;
-         cursor:auto;
-
-         [class^="icon"] {
-            display: block;
-            padding-top: 15px;
-            font-size: 30px;
-         }
-      }
-
-      .number {
-         position: absolute;
-         top: 119px;
-         right: 12px;
-         font-family: 'Bebas Neue';
-         @include fonts(162px,162px);
-         color: #2891B2;
-      }
-
-      h3 {
-         padding: 20px 0 59px;
-         font-weight: 500;
-         @include fonts(16px,150%);
-      }
-
-      .card_three {
-         padding: 20px 0 4px;
+         padding-top: 15px;
+         font-size: 30px;
       }
 
       p {
@@ -63,4 +54,16 @@
          padding-bottom: 22px;
       }
    }
+
+   
+}
+
+h3 {
+   padding: 20px 0 58px;
+   font-weight: 500;
+   @include fonts(16px,150%);
+}
+
+.card_three {
+   padding: 20px 0 4px;
 }

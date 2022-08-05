@@ -1,15 +1,9 @@
 .bord {
    width: 100%;
+   padding-top: 105px;
    position: relative;
    font-family: 'Bebas Neue';
-   @include fonts(61px,61px);
-   // font-weight: 700;
    color: #ffffff;
-   
-   // h2 {
-   //    @include fonts(61px,61px);
-   //    font-weight: 700;
-   // }
 
    [alt="bord"] {
       position: absolute;
@@ -21,12 +15,6 @@
       object-fit: cover;
    }
 
-   .logo {
-      display: block;
-      text-align: end;
-      padding-top: 30px;
-   }
-
    &_text {
       padding: 160px 0 10px 0;
    }
@@ -36,7 +24,6 @@
       background: #14475F;
       color: #ffffff;
       text-align: center;
-      // font-family: 'Montserrat';
       font-weight: 700;
       @include fonts(22px,27px);
       padding: 16px 0 17px 0;

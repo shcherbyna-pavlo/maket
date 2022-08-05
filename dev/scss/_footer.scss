@@ -47,7 +47,10 @@
    }
 
    &_two {
-      color: #14475F;
       padding: 10px 0;
+
+      & a {
+         color: #14475F;
+      }
    }
 }
