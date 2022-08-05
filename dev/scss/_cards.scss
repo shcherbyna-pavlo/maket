@@ -33,9 +33,10 @@
       padding: 30px 30px 30px;
       @include fonts(16px,20px);
       font-weight: 600;
+      transition: box-shadow .8s;
 
       &:hover {
-         box-shadow: 5px 5px 5px #87C5E0;
+         box-shadow: 5px 5px 5px #0495d2;
       }
 
       p {
