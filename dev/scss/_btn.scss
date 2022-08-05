@@ -5,19 +5,18 @@
    [class^="icon"] {
       font-size: 18px;
       position: relative;
-      top: 1px;
+      top: 2px;
       left: 11px;
       }
 
    &:hover {
       text-shadow: 0px 0px 5px #fff;
    }
-
 }
 
 #footer a {
    transition: all .8s;
-   
+
    &:hover {
       color: #000061;
       text-decoration: underline;
