@@ -26,6 +26,8 @@
       @include fonts(162px,162px);
       font-weight: 400;
       color: #2891B2;
+      transition: box-shadow .8s;
+      pointer-events: none;
    }
 
    &_text {
